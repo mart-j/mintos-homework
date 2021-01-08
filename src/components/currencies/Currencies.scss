@@ -1,0 +1,73 @@
+.currencies-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 14px;
+  }
+  .currency-wrapper {
+    width: 33.33%;
+    padding: 0 8px 12px 0;
+  }
+  
+  .currency-wrapper:nth-child(3n + 3) {
+    padding-right: 0;
+  }
+  .currency {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    color: #29537d;
+    text-transform: uppercase;
+    width: 100%;
+    outline: none;
+    border: 1px solid #b9b9b9;
+    background-color: #ececec;
+    cursor: pointer;
+    padding: 8px;
+    transition: all .2s;
+    &:hover {
+      background-color: #dcdcdc;
+    }
+  }
+  
+  .currency-label {
+    line-height: 0;
+  }
+  .checkbox-wrapper {
+    margin-right: 3px;
+    position: relative;
+  }
+  .checkbox-wrapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    width: 13px;
+    height: 13px;
+    background-color: white;
+    border: 1px solid #767676;
+    position: relative;
+  }
+  
+  .checkbox {
+    opacity: 0;
+    top: 0;
+    position: absolute;
+  }
+  .checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    color: red;
+  }
+  
+  .checkbox:checked + .checkmark {
+    opacity: 1;
+  }
+  .currency--selected {
+    background-color: white;
+  }
